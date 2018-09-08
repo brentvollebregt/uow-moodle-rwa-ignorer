@@ -1,0 +1,26 @@
+{
+	"manifest_version": 2,
+
+	"name": "UoW Moodle Ignore Resource-Work-Around",
+	"description": "A solution to Waikato Universities stupid resource work around in Moodle. Open a document link in a new tab without the threat of ripping your hair out.",
+	"version": "1.0",
+	"author": "Brent Vollebregt",
+	"icons": {
+		"128": "icon128.png"
+	},
+
+	"browser_action": {
+		"default_icon": "icon128.png",
+		"default_popup": "popup.html"
+	},
+  
+	"permissions": ["storage"], 
+  
+	"content_scripts": [
+		{
+			"matches": ["https://elearn.waikato.ac.nz/mod/resource/view.php*"],
+			"run_at": "document_end",
+			"js": ["checkWorkAround.js"]
+		}
+	]
+}

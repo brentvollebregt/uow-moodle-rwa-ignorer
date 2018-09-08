@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Waikato Uni Moodle Resource Workaround Ignore</title>
+		<script src='popup.js'></script>
+		<style>
+			body {
+				display: grid;
+				grid-template-columns: 100px 200px;
+			}
+			
+			img {
+				height: 100px;
+				width: 100px;
+			}
+			
+			.right {
+				grid-column: 2/3;
+			}
+			
+			button {
+				width: 90%;
+				display: block;
+				margin: 10px auto;
+				height: 35px;
+				border-radius: 3px;
+				font-size: 20px;
+				cursor: pointer;
+			}
+						
+			button.disabled {
+				border: solid 3px rgba(255, 173, 66, 0.8);
+				background: transparent;
+				color: #ffab40;
+			}
+			
+			button.disabled:hover {
+				border: solid 3px rgb(255, 173, 66);
+				background: rgba(255, 173, 66, 0.2);
+			}
+			
+			button.enabled {
+				border: solid 3px #ffab40;
+				background: rgba(255, 171, 64, 0.8);
+				color: white;
+			}
+			
+			button.enabled:hover {
+				background: rgb(255, 171, 64);
+			}
+			
+			p {
+				grid-column: 2/3; 
+				width: 90%; 
+				margin: 10px auto; 
+				text-align: center;
+			}
+			
+			span {
+				color: #00b55d;
+				font-weight: bold;
+			}
+		</style>
+	</head>
+	<body>
+		<img src="icon128.png">
+		<div class='right'>
+			<button id='enabled'></button>
+			<p><span id='skipped'></span> resource workaround's have been skipped</p>
+		</div>
+	</body>
+</html>
