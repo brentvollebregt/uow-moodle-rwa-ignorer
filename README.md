@@ -1,7 +1,7 @@
 # University of Waikato Moodle Resource Work Around Ignorer
 A chrome extension to solve the Waikato Universities resource work around in Moodle. Simply install this extension in Google Chrome and safely open documents in Moodle in a new tab without wanting to rip your hair out.
 
-![Extension Popup](https://nitratine.net/post-assets/uow-moodle-rwa-ignorer/extension-popup.png)
+![Extension Popup](https://nitratine.net/posts/uow-moodle-rwa-ignorer/extension-popup.png)
 
 ## Installation
 ### Using the .crx File
